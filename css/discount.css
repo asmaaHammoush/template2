@@ -1,0 +1,89 @@
+/* discount */
+
+.discount {
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.discount-desc {
+    height: 300px;
+    background: #f7f3ef;
+    padding: 20px;
+    position: relative;
+}
+
+.discount-desc .top {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 20px;
+}
+
+.discount-desc .top+p {
+    line-height: 1.6;
+}
+
+
+.discount-desc .discount-lines {
+    text-align: right;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+}
+
+
+.discount-desc .discount-lines span {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background: gray;
+    margin-left: 10px;
+}
+
+.discount-desc .discount-lines span:hover {
+    background: var(--mainColor);
+    cursor: pointer;
+}
+
+
+.discount-desc .top .icon {
+    position: absolute;
+    left: -5px;
+    top: 0px;
+    font-size: 50px;
+    color: var(--mainColor);
+}
+
+
+.discount-item {
+    position: relative;
+}
+
+
+.discount-item img {
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+
+.discount-item:hover img {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.discount-item-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.discount-item-info h3 {
+    font-weight: normal;
+    color: var(--mainColor);
+
+}
+
+.discount-item-info h2 {
+    font-size: 20px;
+}
